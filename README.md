@@ -26,3 +26,5 @@ git push origin main manda cambios al repositorio
 python manage.py migrate
 
 python manage.py create superuser
+
+git pull origin main  ------para actualizar rama local por que etsa desfazada con respecto a la rama remota en github
