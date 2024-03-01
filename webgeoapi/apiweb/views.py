@@ -42,9 +42,17 @@ def post_sitio(request):
         direccion=direccion,
         imagen=imagen    
     )  
+    dic_nuevo_sitio = {
+        'id':nuevo_sitio.id,
+        'nombre':nuevo_sitio.nombre,
+        'latitud':nuevo_sitio.latitud,
+        'longitud':nuevo_sitio.longitud,
+        'direccion':nuevo_sitio.direccion,
+        'imagen':nuevo_sitio.imagen
+    }
 
     context = {
         'status': True,
-        'content':'nuevo registro creado'
+        'content':dic_nuevo_sitio
     }
     return JsonResponse(context)
